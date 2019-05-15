@@ -1,0 +1,12 @@
+@include max-width($tablet) {
+    #Embed {
+        bottom: 187px !important;
+    }
+    #launcher {
+        bottom: 17px;
+        z-index: 99 !important;
+    }
+    .launcher-detail {
+        bottom: 87px !important;
+    }
+}

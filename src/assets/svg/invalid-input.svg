@@ -1,0 +1,13 @@
+
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="forms/large-text-field-error" transform="translate(-300.000000, -42.000000)" fill="#D73743" fill-rule="nonzero">
+            <g id="text-field-error" transform="translate(0.000000, 1.000000)">
+                <path d="M312,41 C305.383,41 300,46.383 300,53 C300,59.617 305.383,65 312,65 C318.617,65 324,59.617 324,53 C324,46.383 318.617,41 312,41 Z M312,59 C311.448,59 311,58.552 311,58 C311,57.448 311.448,57 312,57 C312.552,57 313,57.448 313,58 C313,58.552 312.552,59 312,59 Z M313,54 C313,54.552 312.552,55 312,55 C311.448,55 311,54.552 311,54 L311,48 C311,47.448 311.448,47 312,47 C312.552,47 313,47.448 313,48 L313,54 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

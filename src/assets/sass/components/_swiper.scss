@@ -1,0 +1,71 @@
+.fotorama__video-play {
+  background: url(https://images-cdn.walks.org/takewalks-asset/play-160.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.fotorama__video-close {
+  background: url(https://images-cdn.walks.org/takewalks-asset/close-38.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.fotorama__arr--next {
+  background: url(https://images-cdn.walks.org/takewalks-asset/right-26x40.png);
+  background-repeat: no-repeat;
+}
+.fotorama__arr--prev {
+  background: url(https://images-cdn.walks.org/takewalks-asset/left-26x40.png);
+  background-repeat: no-repeat;
+}
+.fotorama__fullscreen-icon {
+  background: url(https://images-cdn.walks.org/takewalks-asset/enlarge-40.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.fotorama--fullscreen {
+  .fotorama__fullscreen-icon {
+    background: url(https://images-cdn.walks.org/takewalks-asset/close-38.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+}
+.fotorama__stage {
+  background-color: #443D47 !important;
+}
+.fotorama-video {
+  .fotorama__stage {
+    background-color: white !important;
+  }
+}
+.fotorama__nav__shaft {
+  display: none;
+}
+.fotorama__caption {
+  font-family: $font-family;
+  @include cf(24px, 14px);
+  font-weight: 400;
+  color: #fff;
+  bottom: 0;
+}
+.fotorama--fullscreen {
+  .fotorama__caption__wrap {
+    text-align: center;
+  }
+}
+.fotorama__caption__wrap {
+  text-align: left;
+  background-color: #443D47;
+  width: 100%;
+}
+
+.fotorama__nav-wrap {
+  @include max-width($mobile) {
+    display: none;
+  }
+}
+
+@include max-width($mobile) {
+  .fotorama__caption {
+    font-size: 14px !important;
+  }
+}
+

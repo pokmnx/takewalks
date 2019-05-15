@@ -1,0 +1,372 @@
+.success-sidebar-container-mobile, .contact-sidebar-mobile {
+  display: none;
+}
+.map-url {
+  margin-top: -30px !important;
+  margin-bottom: 30px !important;
+  float: right;
+  text-decoration: underline !important;
+  color: #443D47;
+}
+.wowo-title, .wowo-descr {
+  display: none;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.meeting-img {
+  width: 320px !important;
+  height: 246px !important;
+}
+.promo-img {
+  height:250px !important;
+  width:100% !important;
+  object-fit: cover;
+}
+.contact-sidebar {
+  border: 1px solid #e4e4e4;
+  background-color: white;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 20px;
+  img {
+    float: left;
+    margin-right: 20px;
+  }
+  .default {
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+}
+.success-shopping-cart {
+  width: 90%;
+  margin: 0 auto;
+  box-shadow: none !important;
+}
+.checkout-success {
+  margin-top: 0px;
+}
+.book-success {
+  padding: 30px;
+}
+.success-heading {
+  margin-top: 100px;
+}
+.success-sidebar-container {
+  background-color: #f7f7f7;
+  margin-top: 0px !important;
+}
+.guide-content {
+  height: 310px;
+  position:relative;
+  background-color: #AF3655;
+  p {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size:1.5em;
+  }
+  .guide-arrow {
+    float: right;
+    margin-top: 20px;
+  }
+  .promo-img {
+    height:300px;
+    width:100%;
+    object-fit: cover;
+    padding-top:1.5%;
+  }
+  a {
+    color: white;
+  }
+}
+.tw-promo-text-container{
+  position: absolute;
+  right:10%;
+  top:15%;
+  height: 180px;
+  width:35%;
+  background:white;
+  padding: 20px;
+  opacity: .7;
+  h2 {
+    font-family: "Alegreya Sans", sans-serif !important;
+    font-size:26;
+    text-align: left;
+    margin-bottom: 3px;
+  }
+  span{
+    font-size: 16px;;
+  }
+  .promo-greater-than{
+    position:absolute;
+    font-size:5em;
+    color:#57B69D;
+    right:10%;
+    line-height:.5em;
+  }
+}
+.table-cities , .table-cities th {
+  border: 1px solid #e4e4e4;
+  text-align: center;
+}
+.table-cities {
+  margin-bottom: 30px;
+}
+.tr-header {
+  background-color: #f7f7f7;
+}
+.table-cities th {
+  font-size: 22px;
+  padding: 10px;
+  font-weight: normal;
+}
+.table-cities td {
+  padding: 5px;
+  font-size: 16px;
+  a {
+    color: #443D47 !important ;
+    &:hover {
+      color: #57B69D !important;
+    }
+  }
+}
+.empty-cell {
+  border-left: none !important; 
+}
+.europe {
+  border-right: none !important;
+}
+.city-icon {
+  margin: 0 auto !important;
+}
+.city-title {
+  text-align: center;
+}
+.meeting-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  h2 {
+    color: #57B69D;
+    font-size: 20px;
+  }
+}
+
+
+.next-content {
+  padding: 10px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  &:not(:last-child) {
+    border-bottom: 1px solid #e4e4e4;
+  }
+  img {
+    margin-right: 30px;
+  }
+  p {
+    margin-top: 15px;
+  }
+
+}
+.success-heading {
+  .icon-checkmark_circled {
+    margin-bottom: -80px;
+  }
+  .page-title {
+    font-size: 36px !important;
+  }
+  .page-sub-title {
+    font-size: 20px !important;
+  }
+}
+.next-descr, .wowo-descr, .meeting-content {
+  border: 1px solid #e4e4e4;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.wowo-descr {
+  h2 {
+    color: #57B69D;
+    font-size: 20px;
+  }
+  button {
+    border-radius: 0px !important;
+    width: 200px;
+    height: 40px;
+  }
+}
+.sidebar-default {
+  font-size: 20px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  margin-top: 50px;
+}
+.sidebar-contact-info {
+  clear:both;
+  padding-left: 60px;
+  li {
+    list-style-type: none;
+  }
+}
+.book-success {
+  .default{
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  p.descr {
+    @include cmt(24px, 16px);
+    @include cmb(54px, 30px);
+    margin-top: 19.2px !important;
+    @media (max-width: 1440px) {
+      margin-top: 16px !important;
+    }
+
+    margin-bottom: 43.2px !important;
+    @media (max-width: 1440px) {
+      margin-bottom: 30px !important;
+    }
+  }
+
+  .share-activity {
+    @include cmt(90px, 60px);
+  }
+}
+
+.share-activity {
+  display: flex;
+
+  .circles {
+    display: flex;
+  }
+
+  .left {
+    @include cmr(120px, 75px);
+  }
+
+  .icon-circle {
+    @include cmr(20px, 15px);
+  }
+
+  h5 {
+    margin-top: 0;
+    @include cmb(20px, 15px);
+  }
+}
+
+@include max-width($tablet) {
+  .meeting-content {
+    display: block;
+    img {
+      margin: 0 auto;
+    }
+  }
+  .container-success {
+    width: 90% !important;
+  }
+  .book-success {
+    padding: 0px;
+    padding-right: 20px;
+  }
+  .success-heading {
+    text-align: center;
+    .page-title {
+      margin-top: 100px !important;
+    }
+  }
+}
+@include max-width($mobile) {
+  .success-sidebar-container-desk {
+    display: none;
+  }
+  .success-sidebar-container-mobile, .contact-sidebar-mobile {
+    display: block;
+  }
+  .mobile-content {
+    overflow: hidden;
+    background-color: #f7f7f7;
+    width: 100vw;
+    margin-left: -29px;
+  }
+  .meeting-content {
+    background-color: white;
+    width: 90%;
+    padding-bottom: 0px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .success-shopping-cart, .next-descr, .table-cities, .guide-content, .contact-sidebar-mobile {
+    width: 100%;
+  }
+  .book-success {
+    padding-right: 0px;
+  }
+  .icon-checkmark_circled {
+    margin-right: 0px;
+  }
+  .table-cities, .guide-content, .next-descr {
+    margin: 0 auto;
+  }
+  .table-cities {
+    margin-bottom: 30px;
+  }
+  .contact-sidebar-mobile{
+    h2 {
+      text-align: left !important;
+    }
+  }
+  h2 {
+    text-align: center;
+  }
+  .meeting-content {
+    .meeting-address{
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+    width: 335px;
+    padding-left: 0px;
+    padding-right: 0px;
+    img {
+      width: 334px !important;
+    }
+    h2 {
+      text-align: left;
+    }
+  }
+
+  .download-rome {
+    margin-top: -7px;
+  }
+  .map-url {
+    padding-left: 34px;
+    float: left;
+  }
+  .wowo-title {
+    font-size: 1.1em;
+
+  }
+  .tw-promo-text-container{
+    width:85%;
+  }
+  .book-success {
+    .default {
+      text-align: center;
+    }
+  }
+  .meeting-content {
+    display: block;
+  }
+}
+@include max-width($desktop) {
+  .meeting-address {
+    padding-right: 160px;
+  }
+}

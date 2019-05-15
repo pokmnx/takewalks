@@ -1,0 +1,110 @@
+.topnav-dropdown {
+  position: absolute;
+  top: 100%;
+  min-width: 180px;
+  left: -1px;
+  border-top: none;
+  background: #fff;
+  box-shadow: -1px -2px 40px 7px rgba(0, 0, 0, 0.07);
+
+  opacity: 0;
+  pointer-events: none;
+  z-index: -1;
+  transform: translateY(-50px);
+  transition: opacity 200ms ease, z-index 200ms ease, transform 300ms ease;
+
+  @include max-width($tablet) {
+    position: relative;
+    background: #fff;
+    top: 0;
+    left: auto;
+    z-index: 1;
+    opacity: 1;
+    box-shadow: none;
+    transform: none;
+    width: 100%;
+    flex: 1 0 auto;
+    //display: flex;
+    flex-direction: column;
+  }
+
+  a {
+    display: block;
+    padding: 14px 20px;
+    color: #443D47 !important;
+    @include cf(26px, 22px);
+    box-shadow: 1px 0px 0px 1px rgba(0, 0, 0, 0.04);
+
+    &:hover {
+      color: $brand-purple !important;
+    }
+
+    @include max-width($tablet) {
+      padding-left: 35px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      flex: 1 0 auto;
+      display: flex;
+      align-items: center;
+      max-height: 51px;
+    }
+
+    @include max-width($mobile) {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 20px;
+    }
+  }
+
+  &.cities-container {
+    // top: 90%;
+
+    @include min-width($desktop + 1) {
+      .inner {
+        display: flex;
+        padding: 18px 12px;
+
+        .inner-list {
+          margin-right: 15px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+
+    @include max-width($desktop) {
+      margin-bottom: 24px;
+
+      .inner {
+        padding-left: 10px;
+        margin-top: 4px;
+        margin-bottom: 14px;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    a {
+      box-shadow: none;
+    }
+
+
+    &::-webkit-scrollbar {
+      width: 7px;
+    }
+
+    &::-webkit-scrollbar-track {
+      border-radius: 3px;
+      background-color: #ebeeef;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 3px;
+      background-color: #c2cace;
+    }
+  }
+}

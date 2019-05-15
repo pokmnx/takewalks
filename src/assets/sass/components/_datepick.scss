@@ -1,0 +1,475 @@
+.booking-sidebar-heading {
+	display: none;
+}
+.guest-label {
+	span {
+		text-transform: none !important;
+	}
+}
+.right-sidebar-item {
+	.guest-price {
+		color: #443D47 !important;
+	}
+}
+.date-picker-container {
+	padding-bottom: 0px !important;
+}
+.sidebar-selected-value {
+	padding-bottom: 30px !important;
+}
+.book-now-container {
+	margin: 0 auto !important;
+	.sidebar-content {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+}
+.price-value-datepick {
+	font-size: 30px !important;
+}
+.mb-1 {
+	margin-bottom: 0px !important;
+}
+#accordion3 {
+	margin: 0 auto;
+}
+.booking-error-message {
+	background-color: white !important;
+	border-color: #D73743 !important;
+	color: #D73743 !important;
+	border-radius: 0px !important;
+	width: 340px !important;
+	margin: 0 auto !important;
+	margin-bottom: 50px;
+}
+.btn-book-now {
+	height: 60px;
+	width: 300px;
+	border-radius: 60px !important;
+}
+.right-book-desktop{
+	margin-top: 20px;
+}
+.currency-toggler{
+	cursor: pointer;
+}
+.currency-toggler.active { 
+		color: #57B69D;
+}
+.listing .datepick-popup {
+	@include max-width($mobile) {
+		position: fixed !important;
+	}
+}
+
+.booking-widget-close {
+	margin-top: 70px;
+	float: right;
+	margin-bottom: 30px;
+}
+.book {
+	.currency-nav {
+		margin-bottom: 30px !important; 
+	}
+}
+
+.book-footer-btn{
+	padding-top: 16px !important;
+	border-radius: 0px !important;
+	background-color: #AF3655 !important;
+	float: right;
+	width: 100px;
+	height: 40px;
+	margin-top: 5px;
+	z-index: 999;
+	font-size: 14px;
+}
+
+.booking-widget-footer{
+	margin: 0 !important;
+	padding: 0 !important;
+	height: 100%;
+	background-color: white;
+}
+.booking-widget-content{
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: white;
+	border: none;
+	margin-bottom: 20px;
+	
+}
+.price-value-footer{
+	position: relative;
+    margin-left: auto;
+    color: #57B69D;
+    font-size: 38px;
+    font-weight: 400;
+}
+.fixed-bottom {
+	margin: 0 !important;
+	bottom: 0 !important;
+	background-color: white;
+
+	header {
+		padding: 0px !important;
+	}
+}
+
+.datepick-popup {
+	z-index: 1000;
+	top: 1046px !important;
+	left: 565px !important;
+}
+
+.sidebar-content-calendar{
+	border: 1px solid #C8D0D8;
+	padding: 20px;
+	width: 330px;
+	//height: 450px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	background-color: #f7f7f7;
+	border-radius: 3px;
+}
+.card-body{
+	height: 100vh;
+	overflow: scroll;
+	margin: 0 auto;
+}
+.fixed-bottom{
+	display: none !important;
+	z-index: 998 !important;
+	border-left: none;
+	border-right: none;
+	border-bottom: none !important;
+}
+@media (max-width: 1024px) {
+	.sidebar-booking {
+		margin: 0 auto;
+	}
+	.fixed-bottom{
+		display: block !important;
+	}
+	.sidebar-content-calendar{
+		width: 435px;
+	}
+	.right-book-desktop{
+		display: none;
+	}
+	td {
+		span {
+			display: inline-block;
+			width: 40px;
+			height: 40px;
+			margin: 0px !important;
+		}
+		a {
+			height: 95% !important;
+			//width: 95% !important;
+		
+		}
+	}
+}
+
+.currency-nav{
+	border: 1px solid #D9DDE2;
+	width: 426px;
+	height: 54px;
+	border-radius: 60px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	margin-top: 80px;
+
+	a {
+		text-align: center;
+		font-size: 16px;
+		display: inline-block;
+		height: 100%;
+		width: 19%;
+		margin: 0 auto;
+		padding-top: 20px;
+	}
+	a:not(:last-child){
+		border-right: 1px solid #D9DDE2;
+	}
+}
+
+.datepick {
+	width: 100% !important;
+	position: relative;
+	background-color: #f7f7f7;
+	//min-width: 300px;
+
+	.datepick-popup & {
+		border: 1px solid $input-border;
+		padding: 0 7px;
+		border-radius: 4px;
+	}
+
+	table {
+		width: 100%;
+		margin-top: 20px;
+	}
+
+	th {
+		font-weight: 400;
+		text-align: center;
+		height: 50px;
+    	//font-size: 17px;
+    	//text-transform: uppercase;
+		//color: $brand-green;
+	}
+
+	.datepick-nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.datepick-cmd {
+		flex: 0;
+		padding: 8px;
+		position: relative;
+		z-index: 6;
+
+		.icon {
+			color: #ccd4d7;
+			@include icon-size(22px);
+		}
+
+		&:hover {
+			.icon {
+				color: $brand-purple;
+			}
+		}
+
+		&:focus {
+			outline: none;
+		}
+
+		&-prev,
+		&-next {
+			flex-basis: 25%;
+		}
+	}
+
+	.datepick-cmd-today {
+		font-weight: $light;
+		@include cf(34px, 24px);
+		color: #37474f;
+		flex: 1 0 auto;
+		opacity: 0;
+	}
+
+	.datepick-month-header {
+		font-weight: $light;
+		@include cf(34px, 24px);
+		color: #37474f;
+		position: absolute;
+		top: 10px;
+		width: 100%;
+		text-align: center;
+		z-index: 4;
+	}
+
+	.datepick-cmd-next {
+		text-align: right;
+
+		.icon {
+			transform: rotateZ(180deg);
+		}
+	}
+
+	td {
+		padding: 0;
+		text-align: center;
+		font-size: 18px;
+		font-weight: 300;
+		color: #443D47;
+		width: 40px;
+		height: 40px;
+		
+
+		a {
+			margin: 1px;
+			display: inline-block;
+			width: 40px;
+			height: 40px;
+			line-height: 40px;
+			//border-radius: 50%;
+			background-color: rgba(87, 182, 157, 0.45);
+
+			color: $text-color;
+			text-align: center;
+
+			&.datepick-other-month {
+				color: #cbd2d7;
+			}
+
+			&.datepick-selected {
+				background-color: $brand-green;
+				color: #fff;
+
+				&:hover {
+					color: #fff;
+				}
+			}
+
+			&:focus {
+				outline: none;
+			}
+		}
+		.disabled-date{
+			color: #C8D0D8;
+		}
+	}
+
+	.datepick-ctrl {
+		.datepick-cmd {
+			color: $grey-blue;
+			font-size: 12px;
+		}
+	}
+}
+.datepick td a.datepick-other-month {
+	color: #443d47;
+	background-color: rgba(87,182,157, 0.25) !important;
+}
+
+.datepick-with-arrows {
+	margin-left: 22px;
+	display: flex;
+	align-items: center;
+
+	.change-date {
+		color: #a0adba;
+		padding: 8px;
+		cursor: pointer;
+
+		&:hover {
+			color: $brand-green;
+		}
+
+		&:active {
+			color: #a0adba;
+		}
+
+		em {
+			font-style: normal;
+		}
+
+		&.prev-date {
+			@include min-width($mobile) {
+				position: relative;
+				min-width: 55px;
+
+				em {
+					position: absolute;
+					right: 5px;
+				}
+			}
+		}
+
+		@include max-width($mobile) {
+			&.prev-date {
+				text-align: right;
+
+				em {
+					display: block;
+				}
+			}
+
+			&.next-date {
+				text-align: left;
+
+				em {
+					display: block;
+				}
+			}
+		}
+	}
+
+	.icon-arrow_left {
+		font-size: 12px;
+		color: #443D47 !important;
+		text-align: center;
+
+
+	}
+	.next-date .icon-arrow_left{
+		transform: rotate(180deg);
+
+	}
+
+	.input-icon {
+		margin: 0 10px;
+
+	}
+}
+
+
+.datepick-ctrl {
+	@include max-width($mobile) {
+		display: none;
+	}
+}
+
+@include max-width(510px) {
+	.sidebar-heading-booking, .sidebar-booking  {
+		width: 100vw !important;
+		margin-left: -20px;
+	}
+	.currency-nav, .btn-book-now {
+		width: 100% !important;
+	}
+	.sidebar-heading-booking {
+		margin-left: -20px;
+	}
+	.sidebar-heading-booking, .sidebar-booking  {
+		width: 100vw !important;
+	}
+	.book-now-container {
+		margin: 0 auto !important;
+		.sidebar-content {
+			padding-left: 0px;
+			padding-right: 0px;
+		}
+	}
+	.sidebar-content-calendar {
+		width: 300px;
+
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+	.sidebar-booking {
+		margin-right: 0px !important;
+	}
+}
+.time-picker-container, .pax-picker-container, .upgrades-picker-container, .options-picker-container  {
+	padding-bottom: 0px !important;
+	border-top: 1px solid #C8D0D8;
+}
+.datepick-month {
+	table {
+		margin-top: 0px;
+	}
+}
+@include max-width($tablet) {
+	.datepick-popup {
+		z-index: 1000;
+		top: 150px !important;
+		left: 30vw !important;
+	}
+}
+@include max-width($mobile) {
+	.datepick-popup {
+		z-index: 1000;
+		top: 567px !important;
+		left: 10% !important;
+	}
+}
+.widget-strike-through {
+	margin-right: 5px;
+}
